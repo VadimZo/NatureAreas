@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import ModalNatureArea from "./modals/ModalNatureArea/ModalNatureArea";
 import { useEffect, useLayoutEffect } from "react";
@@ -23,10 +23,11 @@ function App() {
     <div className="App">
       <Routes location={state?.backgroundLocation || location}>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       {state?.backgroundLocation && (
         <Routes>
-          <Route path="/modal/:id" element={<ModalNatureArea />} />
+          <Route path="/modal/area" element={<ModalNatureArea />} />
         </Routes>
       )}
     </div>

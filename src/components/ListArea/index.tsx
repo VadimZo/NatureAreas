@@ -24,9 +24,16 @@ const Area = ({ title, items }: AreaProps) => {
         {items.map((item) => {
           return (
             <li>
-              <Link to="/modal/1" state={{ backgroundLocation: location }}>
-                {item}
-              </Link>
+              {!item.image ? (
+                item.name
+              ) : (
+                <Link
+                  to={`/modal/area`}
+                  state={{ backgroundLocation: location, areaInfo: item }}
+                >
+                  {item.name}
+                </Link>
+              )}
             </li>
           );
         })}

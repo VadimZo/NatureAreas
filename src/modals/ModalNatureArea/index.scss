@@ -1,10 +1,10 @@
 .contacts {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   background-color: white;
-  margin-left: -16px;
   padding: 12px 16px;
+  margin-top: auto;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: -12px;
   border-radius: 12px;
   h2 {
     padding: 0;
@@ -15,7 +15,26 @@
     margin: 0;
   }
 }
+ul.contacts__list {
+  margin-bottom: 10px;
+}
 .contacts__list-item {
   display: flex;
-  justify-content: space-between;
+}
+.contacts__list-right {
+  margin-left: 5px;
+}
+.nature-main {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.nature-main__desc {
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+.nature-main__img {
+  max-width: 45%;
 }
