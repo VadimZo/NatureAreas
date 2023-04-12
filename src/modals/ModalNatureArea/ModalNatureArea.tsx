@@ -15,7 +15,16 @@ export default function ModalNatureArea() {
     return <></>;
   }
 
-  const { name, image, description, adress, email, phone,coordinates } = areaInfo || {};
+  const {
+    name,
+    image,
+    description,
+    adress,
+    email,
+    phone,
+    coordinates,
+    geometryArea,
+  } = areaInfo || {};
 
   return (
     <Modal>
@@ -25,7 +34,13 @@ export default function ModalNatureArea() {
         <p className="nature-main__desc">{description}</p>
       </div>
 
-      <Contacts adress={adress} email={email} phone={phone} coordinates={coordinates} />
+      <Contacts
+        adress={adress}
+        email={email}
+        phone={phone}
+        coordinates={coordinates}
+        geometryArea={geometryArea}
+      />
     </Modal>
   );
 }

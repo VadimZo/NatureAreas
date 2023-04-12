@@ -7,7 +7,11 @@ export const Contacts = ({
   adress,
   phone,
   coordinates,
-}: Pick<AreaItems, "email" | "adress" | "phone" | "coordinates">) => {
+  geometryArea,
+}: Pick<
+  AreaItems,
+  "email" | "adress" | "phone" | "coordinates" | "geometryArea"
+>) => {
   return (
     <div className="contacts">
       <h2 className="contacts__title">Контакты</h2>
@@ -27,7 +31,7 @@ export const Contacts = ({
           </a>
         </li>
       </ul>
-      <MapCustom coordinates={coordinates} />
+      <MapCustom coordinates={coordinates} geometryArea={geometryArea} />
     </div>
   );
 };

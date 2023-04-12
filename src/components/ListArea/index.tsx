@@ -21,9 +21,9 @@ const Area = ({ title, items }: AreaProps) => {
         {title}
       </h2>
       <ol data-aos-once="true" data-aos="fade-right" data-aos-delay="100">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               {!item.image ? (
                 item.name
               ) : (
