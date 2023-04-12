@@ -24,7 +24,7 @@ const Area = ({ title, items }: AreaProps) => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              {!item.image ? (
+              {!item.images ? (
                 item.name
               ) : (
                 <Link

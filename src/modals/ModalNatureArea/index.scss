@@ -38,3 +38,14 @@ ul.contacts__list {
 .nature-main__img {
   max-width: 45%;
 }
+@media (max-width: 1024px) {
+  .nature-main {
+    flex-direction: column;
+  }
+  .nature-main__img {
+    max-width: 100%;
+  }
+  .nature-main__desc {
+    margin-top: 10px;
+  }
+}

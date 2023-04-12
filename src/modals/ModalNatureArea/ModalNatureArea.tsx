@@ -17,7 +17,7 @@ export default function ModalNatureArea() {
 
   const {
     name,
-    image,
+    images,
     description,
     adress,
     email,
@@ -30,7 +30,7 @@ export default function ModalNatureArea() {
     <Modal>
       <h2 className="tac">{name}</h2>
       <div className="nature-main">
-        <img className="nature-main__img" src={image} />
+        <img className="nature-main__img" src={images?.[0]} />
         <p className="nature-main__desc">{description}</p>
       </div>
 
