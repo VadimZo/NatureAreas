@@ -25,8 +25,6 @@ ul.contacts__list {
   margin-left: 5px;
 }
 .nature-main {
-  display: flex;
-  align-items: flex-start;
   margin-bottom: 10px;
 }
 .nature-main__desc {
@@ -35,15 +33,9 @@ ul.contacts__list {
   padding-left: 15px;
   font-size: 1.2rem;
 }
-.nature-main__img {
-  max-width: 45%;
-}
 @media (max-width: 1024px) {
   .nature-main {
-    flex-direction: column;
-  }
-  .nature-main__img {
-    max-width: 100%;
+    display: block;
   }
   .nature-main__desc {
     margin-top: 10px;
