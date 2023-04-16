@@ -1,7 +1,8 @@
 .swiper {
-  max-width: 50%;
+  width: 50%;
   margin-right: 15px;
   float: left;
+  min-height: 300px;
 }
 .swiper-slide {
   height: auto;
@@ -9,6 +10,7 @@
 }
 .slide__img {
   height: 100%;
+  width: 100%;
 }
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
   opacity: 0.5;
