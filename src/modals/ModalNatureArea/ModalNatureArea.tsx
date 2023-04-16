@@ -25,7 +25,6 @@ export default function ModalNatureArea() {
     phone,
     coordinates,
     geometryArea,
-    mainInformation,
   } = areaInfo || {};
 
   return (
@@ -35,7 +34,7 @@ export default function ModalNatureArea() {
         <ImagesGalary images={images} />
         <p className="nature-main__desc">{description}</p>
       </div>
-      <p dangerouslySetInnerHTML={{ __html: mainInformation || "" }} />
+  {/*     <p dangerouslySetInnerHTML={{ __html: mainInformation || "" }} /> */}
 
       <Contacts
         adress={adress}
