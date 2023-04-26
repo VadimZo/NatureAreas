@@ -11,10 +11,10 @@ export default function MapCustom({
 }: Pick<AreaItems, "coordinates" | "geometryArea">) {
   return (
     <Map
-      height={300}
+      height={350}
       defaultCenter={coordinates as Point}
       maxZoom={maxZoomChanger(coordinates?.[0])}
-      defaultZoom={9}
+      defaultZoom={maxZoomChanger(coordinates?.[0])}
     >
       <GeoJson data={geometryArea} />
       <Marker width={35} anchor={coordinates as Point}>

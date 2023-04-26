@@ -31,7 +31,23 @@ ul.contacts__list {
   padding: 0;
   margin: 0;
   padding-left: 15px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+p.nature-main__html {
+  text-indent: 0;
+}
+.nature-main__html {
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-indent: 0px;
+    margin: 0 0 0 50px;
+    padding: 0;
+  }
 }
 @media (max-width: 1024px) {
   .nature-main {
