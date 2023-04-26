@@ -27,14 +27,17 @@ ul.contacts__list {
 .nature-main {
   margin-bottom: 10px;
 }
+p.nature-main__desc {
+  text-indent: 35px;
+}
 .nature-main__desc {
   padding: 0;
   margin: 0;
-  padding-left: 15px;
   font-size: 1.1rem;
 }
 p.nature-main__html {
   text-indent: 0;
+  white-space: pre-line;
 }
 .nature-main__html {
   h3 {
@@ -45,7 +48,7 @@ p.nature-main__html {
     display: flex;
     flex-direction: column;
     text-indent: 0px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 20px;
     padding: 0;
   }
 }
