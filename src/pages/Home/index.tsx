@@ -1,8 +1,8 @@
-import React from "react";
 import Navigation from "../../components/Navigation";
 import ListArea from "../../components/ListArea";
 import HomeImage from "../../assets/main-img.jpg";
 import "./index.scss";
+
 export default function Home() {
   return (
     <>

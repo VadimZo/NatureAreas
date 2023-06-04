@@ -5,6 +5,7 @@ import { Contacts } from "./Contacts";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AreaItems } from "../../constants";
 import { ImagesGalary } from "../../components/ImageGalary";
+import { FilesTable } from "./FilesTable";
 
 export default function ModalNatureArea() {
   const location = useLocation();
@@ -26,6 +27,7 @@ export default function ModalNatureArea() {
     coordinates,
     geometryArea,
     htmlInfo,
+    files,
   } = areaInfo || {};
 
   return (
@@ -39,7 +41,13 @@ export default function ModalNatureArea() {
         className="nature-main__html"
         dangerouslySetInnerHTML={{ __html: htmlInfo || "" }}
       ></p>
-      {/*     <p dangerouslySetInnerHTML={{ __html: mainInformation || "" }} /> */}
+
+      {files && (
+        <>
+          <h3>Нормативная правовая основа функционирования ООПТ:</h3>
+          <FilesTable files={files} />
+        </>
+      )}
 
       <Contacts
         adress={adress}
