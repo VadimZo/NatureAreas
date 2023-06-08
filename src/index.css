@@ -108,11 +108,11 @@ img {
 }
 
 p {
-  text-indent: clamp(12px, 3vw, 40px);
   white-space: pre-wrap;
+  text-align: justify;
 }
 ol {
-padding-left: clamp(12px, 3vw, 40px);
+  padding-left: clamp(12px, 3vw, 40px);
 }
 h2 {
   font-size: clamp(1.5rem, 1rem + 1.5vw, 1.8rem);
