@@ -7,6 +7,10 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal-wrapper {
+  overflow: auto;
+  padding: 12px 16px;
+}
 .modal-content {
   position: fixed;
   top: 50%;
@@ -14,13 +18,12 @@
   transform: translate(-50%, -50%);
   width: 90%;
   height: 95%;
-  overflow: auto;
   background-color: #faf7e5;
   color: black;
-  padding: 12px 16px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .modal__close {
   position: absolute;

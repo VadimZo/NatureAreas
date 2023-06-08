@@ -24,10 +24,12 @@ export const Modal = ({ children }: ModalProps) => {
   return (
     <div className="modal" onClick={onClose}>
       <div onClick={(e) => e.stopPropagation()} className="modal-content">
-        <div className="modal__close" onClick={onClose}>
-          <CloseIcon />
+        <div className="modal-wrapper">
+          <div className="modal__close" onClick={onClose}>
+            <CloseIcon />
+          </div>
+          {children}
         </div>
-        {children}
       </div>
     </div>
   );
