@@ -56,3 +56,8 @@ p.nature-main__html {
     margin-top: 10px;
   }
 }
+@media (max-width: 640px) {
+  .nature-main__desc {
+    font-size: 1rem;
+  }
+}
