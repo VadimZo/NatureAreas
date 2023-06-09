@@ -16,13 +16,11 @@ export const ImagesGalary = ({ images }: { images: Image[] | undefined }) => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
-      {images?.map((image) => {
+      {images?.map((image, i) => {
         const { url } = image;
         return (
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <img
               style={{ aspectRatio: 87 / 61 }}
               className="slide__img"

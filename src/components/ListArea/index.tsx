@@ -6,8 +6,8 @@ import { useLocation } from "react-router-dom";
 export default function ListArea() {
   return (
     <>
-      {areas.map((area) => {
-        return <Area {...area} />;
+      {areas.map((area, i) => {
+        return <Area key={i} {...area} />;
       })}
     </>
   );
