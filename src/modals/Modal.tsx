@@ -12,6 +12,7 @@ export const Modal = ({ children }: ModalProps) => {
 
   const onClose = () => {
     navigator(-1);
+    window.navigator.vibrate(5000);
   };
 
   useEffect(() => {
