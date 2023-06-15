@@ -7,7 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      injectRegister: "auto",
+      workbox: {
+        globPatterns: ["**/*"],
+      },
+      includeAssets: ["**/*"],
     }),
   ],
 });
