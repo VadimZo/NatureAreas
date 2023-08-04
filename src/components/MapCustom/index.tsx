@@ -2,13 +2,18 @@ import React from "react";
 import { GeoJson, Map, Marker, Point } from "pigeon-maps";
 import locationIcon from "../../assets/location-icon.svg";
 import "./index.scss";
-import { AreaItems } from "../../constants";
 import { maxZoomChanger } from "./maxZoomChanger";
+import { AreaItems } from "../../types";
 
-export default function MapCustom({
+interface MapCustomProps<T extends AreaItems> {
+  coordinates: T["coordinates"];
+  geometryArea: T["geometryArea"];
+}
+
+export default function MapCustom<T extends AreaItems>({
   coordinates,
   geometryArea,
-}: Pick<AreaItems, "coordinates" | "geometryArea">) {
+}: MapCustomProps<T>) {
   return (
     <Map
       height={350}
@@ -27,7 +32,7 @@ export default function MapCustom({
 export const MarkerCustom = () => {
   return (
     <div className="map_page_marker_container">
-      <img src={locationIcon} className="map_page_marker_img" />
+      <img src={locationIcon} alt="Location" className="map_page_marker_img" />
     </div>
   );
 };

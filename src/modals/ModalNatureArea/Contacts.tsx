@@ -1,27 +1,27 @@
 import React from "react";
 import MapCustom from "../../components/MapCustom";
-import { AreaItems } from "../../constants";
+import { AreaItems } from "../../types";
 
 export const Contacts = ({
   email,
-  adress,
+  address,
   phone,
   coordinates,
   geometryArea,
 }: Pick<
   AreaItems,
-  "email" | "adress" | "phone" | "coordinates" | "geometryArea"
+  "email" | "address" | "phone" | "coordinates" | "geometryArea"
 >) => {
   return (
     <div className="contacts">
-      {(email || adress || phone) && (
+      {(email || address || phone) && (
         <>
           <h2 className="contacts__title">Контакты</h2>
           <ul className="contacts__list">
-            {adress && (
+            {address && (
               <li className="contacts__list-item">
                 <div>Адрес:</div>
-                <div className="contacts__list-right">{adress}</div>
+                <div className="contacts__list-right">{address}</div>
               </li>
             )}
             {email && (
@@ -41,7 +41,7 @@ export const Contacts = ({
           </ul>
         </>
       )}
-      <MapCustom coordinates={coordinates} geometryArea={geometryArea} />
+      <MapCustom<AreaItems> coordinates={coordinates} geometryArea={geometryArea} />
     </div>
   );
 };

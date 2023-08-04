@@ -3,9 +3,9 @@ import { Modal } from "../Modal";
 import "./index.scss";
 import { Contacts } from "./Contacts";
 import { useLocation, useNavigate } from "react-router-dom";
-import { AreaItems } from "../../constants";
 import { ImagesGalary } from "../../components/ImageGalary";
 import { FilesTable } from "./FilesTable";
+import { AreaItems } from "../../types";
 
 export default function ModalNatureArea() {
   const location = useLocation();
@@ -21,7 +21,7 @@ export default function ModalNatureArea() {
     name,
     images,
     description,
-    adress,
+    address: address,
     email,
     phone,
     coordinates,
@@ -50,7 +50,7 @@ export default function ModalNatureArea() {
       )}
 
       <Contacts
-        adress={adress}
+        address={address}
         email={email}
         phone={phone}
         coordinates={coordinates}
