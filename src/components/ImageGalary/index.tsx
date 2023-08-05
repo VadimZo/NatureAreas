@@ -6,7 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css";
 import "./index.scss";
-import { Image } from "../../constants";
+import { Image } from "../../types";
+
 
 export const ImagesGalary = ({ images }: { images: Image[] | undefined }) => {
   return (

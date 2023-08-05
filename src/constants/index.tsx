@@ -1,5 +1,6 @@
 import { AreaProps } from "../types";
 
+
 export const areas: AreaProps[] = [
   {
     title: "Государственные природные заповедники:",

@@ -1,7 +1,8 @@
 import React from "react";
-import { AreaProps, areas } from "../../constants";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { areas } from "../../constants";
+import { AreaProps } from "../../types";
 
 export default function ListArea() {
   return (

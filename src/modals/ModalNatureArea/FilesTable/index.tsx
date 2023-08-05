@@ -1,6 +1,6 @@
 import "./index.scss";
 import PDF_ICON from "../../../assets/pdf-icon.png";
-import { File } from "../../../constants";
+import { File } from "../../../types";
 
 export const FilesTable = ({ files }: { files: File[] }) => {
   return (
